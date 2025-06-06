@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola de Bolo by Marrara 4.0 - Transforme Sua Paixão em Renda Extra!</title>
+    <meta name="keywords" content="curso de bolo, escola de bolo, Marrara Bortoloti, bolos perfeitos, decoração de bolo, renda extra, confeitaria, como fazer bolo, bolo para vender, empreender com bolos, curso de doces, receitas de bolo, mini tortas lucrativas, bolos de sucesso, bolos enfeitados">
+    <meta name="description" content="Aprenda a fazer bolos perfeitos e decorações incríveis com a Escola de Bolo by Marrara 4.0. Transforme sua paixão em renda extra com 4 cursos completos em 1, bônus e certificado!">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Variáveis CSS para cores da confeitaria */
+        :root {
+            --primary-color: #FF69B4; /* Rosa Vibrante (Doce de Morango) */
+            --secondary-color: #FFC0CB; /* Rosa Claro (Glacê Suave) */
+            --accent-color: #A0522D; /* Marrom Claro (Chocolate Suave) */
+            --text-dark: #333; /* Texto Escuro */
+            --text-light: #555; /* Texto Mais Leve */
+            --background-light: #FFF8E1; /* Creme (Massa de Bolo) */
+            --background-white: #FFFFFF; /* Branco Puro */
+            --button-hover: #E04B9F; /* Rosa mais escuro para hover */
+            --shadow-light: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--background-white);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px var(--shadow-light);
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        .logo h1 {
+            font-family: 'Pacifico', cursive; /* Fonte que remete a escrita à mão, algo artístico */
+            color: var(--primary-color);
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px var(--secondary-color);
+        }
+
+        .hero-section {
+            background: linear-gradient(to bottom, var(--background-light), var(--secondary-color));
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .hero-section h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.8em;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .hero-section p {
+            font-size: 1.4em;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        .highlight-accent {
+            color: var(--accent-color);
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--background-white);
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--button-hover); /* Borda para destaque */
+        }
+
+        .cta-button:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 20px rgba(255, 105, 180, 0.6);
+            border-color: var(--primary-color);
+        }
+
+        .cta-button::before {
+            content: '🍰'; /* Ícone de bolo na animação */
+            position: absolute;
+            top: 50%;
+            left: -20%;
+            font-size: 1.5em;
+            opacity: 0;
+            transform: translateY(-50%) rotate(0deg);
+            transition: all 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            opacity: 1;
+            left: 10%;
+            transform: translateY(-50%) rotate(360deg);
+        }
+
+        .cta-button::after {
+            content: '🎉'; /* Ícone de festa na animação */
+            position: absolute;
+            top: 50%;
+            right: -20%;
+            font-size: 1.5em;
+            opacity: 0;
+            transform: translateY(-50%) rotate(0deg);
+            transition: all 0.5s ease;
+        }
+
+        .cta-button:hover::after {
+            opacity: 1;
+            right: 10%;
+            transform: translateY(-50%) rotate(360deg);
+        }
+
+        section {
+            background-color: var(--background-white);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--accent-color);
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .text-block p {
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            text-align: justify;
+            color: var(--text-light);
+        }
+
+        .text-block strong {
+            color: var(--primary-color);
+        }
+
+        .marrara-bio {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px var(--shadow-light);
+        }
+        .marrara-bio h3 {
+            font-family: 'Pacifico', cursive;
+            color: var(--accent-color);
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .marrara-bio p {
+            font-size: 1.1em;
+            color: var(--text-dark);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .marrara-bio strong {
+            color: var(--text-dark);
+        }
+
+        .course-highlights ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .course-highlights li {
+            background-color: var(--background-light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px var(--shadow-light);
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--accent-color);
+            transition: transform 0.2s ease;
+            border: 1px solid var(--secondary-color);
+        }
+        .course-highlights li:hover {
+            transform: translateY(-5px);
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+        }
+
+        .gallery {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .gallery h2 {
+            margin-bottom: 30px;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 200px; /* Altura fixa para consistência */
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow-light);
+            transition: transform 0.3s ease;
+            border: 3px solid var(--secondary-color);
+        }
+        .image-grid img:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-color);
+        }
+
+        .bonuses-section {
+            background-color: var(--background-white);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px var(--shadow-light);
+        }
+        .bonuses-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .bonuses-section li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: var(--text-dark);
+        }
+        .bonuses-section li::before {
+            content: '✨';
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        .certificate-info {
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: 20px;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .final-cta {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .final-cta h2 {
+            color: var(--background-white);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .price-highlight {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 3.5em;
+            font-weight: 900;
+            color: var(--background-white);
+            margin: 20px 0;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+            display: block;
+        }
+        .price-info {
+            font-size: 1.3em;
+            color: var(--background-white);
+            margin-bottom: 30px;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--accent-color);
+            color: var(--background-white);
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 2.5em;
+            }
+            .hero-section h1 {
+                font-size: 2em;
+            }
+            .hero-section p {
+                font-size: 1.1em;
+            }
+            .cta-button {
+                font-size: 1.4em;
+                padding: 15px 30px;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            section {
+                padding: 20px;
+            }
+            .image-grid {
+                grid-template-columns: 1fr; /* Uma coluna em telas menores */
+            }
+            .final-cta h2 {
+                font-size: 2em;
+            }
+            .price-highlight {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Escola de Bolo by Marrara</h1>
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>
+                    Sua jornada para <span class="highlight-text">bolos perfeitos</span> e uma <span class="highlight-text">renda extra incrível</span> começa AGORA!
+                </h1>
+                <p>
+                    Você já sonhou em criar bolos que encantam, mas se sente <span class="highlight-accent">frustrada(o)</span>, <span class="highlight-accent">insegura(o)</span> ou acha que a confeitaria não é para você? Esqueça as receitas que dão errado e os resultados que não saem como o esperado!
+                    Com a **Escola de Bolo by Marrara 4.0**, você vai <span class="highlight-text">dominar</span> cada técnica, do básico ao avançado, e transformar sua paixão em um negócio <span class="highlight-text">lucrativo</span>.
+                </p>
+                <p>
+                    **Descubra o segredo dos confeiteiros de sucesso, mesmo que você nunca tenha feito um bolo na vida!**
+                </p>
+                <a href="https://go.hotmart.com/N100098183J?ap=5512" target="_blank" rel="noopener noreferrer" class="cta-button">
+                    Quero Me Tornar Uma Confeiteira de Sucesso!
+                </a><img src="/img/197.png" width="20%" alt="Marrara Bortoloti">
+            </div>
+        </section>
+
+        <section class="container text-block">
+            <h2>Você se Identifica com Isso?</h2>
+            <p>
+                A busca por "como fazer bolo perfeito", "decoração de bolo fácil" ou "bolo para vender" nunca foi tão alta! Milhares de pessoas como você, mulheres e homens, querem mais do que um hobby: buscam uma forma de <strong class="highlight-text">complementar a renda familiar</strong>, ter sua <strong class="highlight-text">independência financeira</strong> ou simplesmente fazer bolos que **impressionam a todos!**
+            </p>
+            <p>
+                O mercado de bolos e doces caseiros nunca esteve tão aquecido, e a demanda por produtos de qualidade e com um toque especial é gigantesca. Mas como se destacar? Como garantir que seus bolos sejam lindos, deliciosos e lucrativos? A resposta está em um **método comprovado**, que te ensina desde o zero, desvendando todos os segredos.
+            </p>
+            <p>
+                **Você pode sim criar obras-primas da confeitaria**, mesmo que hoje você se sinta completamente iniciante. A Marrara Bortoloti vai te pegar pela mão!
+            </p>
+        </section>
+
+        <section class="container">
+            <h2>Conheça a Marrara Bortoloti: Sua Mentora na Confeitaria</h2>
+            <img src="/img/marrara/Marrara.jpg"  width="20%" alt="Marrara Bortoloti" style="display: block; margin: auto">
+            <div class="marrara-bio">
+                <p>
+                    <strong style="font-size: 1.3em;">Marrara Bortoloti</strong> não é apenas uma confeiteira, é uma verdadeira **história de superação e sucesso!** Ela transformou sua própria realidade através da confeitaria, iniciando com pouco investimento e recursos limitados. Com muita dedicação, ela se tornou uma **empreendedora de sucesso** e uma verdadeira **especialista** no ramo.
+                </p>
+                <p>
+                    Criadora de diversos cursos online e apostilas de confeitaria, a Marrara já **transformou a vida de mais de 50 mil alunas** somando todos os seus projetos. Ela entende suas dores, suas dúvidas e, principalmente, seus sonhos.
+                </p>
+                <p>
+                    E agora, com a **Escola de Bolo by Marrara 4.0**, ela vai encurtar o seu caminho rumo ao sucesso, compartilhando todo o seu conhecimento e técnicas testadas e aprovadas para você também brilhar na confeitaria!
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>O Que Você Vai Aprender na Escola de Bolo by Marrara 4.0:</h2>
+            <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px; font-weight: 600; color: var(--primary-color);">
+                Este não é apenas um curso, são <span class="highlight-text">4 CURSOS COMPLETOS EM 1</span>, para você dominar a confeitaria de ponta a ponta!
+            </p>
+            <ul class="course-highlights">
+                <li>
+                     <p><strong>CURSO MINI TORTAS LUCRATIVAS:</strong> Aprenda a fazer tortas pequenas, charmosas e altamente lucrativas!</p>
+                </li>
+                <li>
+                      <p><strong>CURSO BOLOS DE SUCESSO:</strong> Da massa perfeita à montagem, desvende os segredos dos bolos que vendem!</p>
+                </li>
+                <li>
+                        <p><strong>CURSO ESCOLA DE BOLO BY MARRARA:</strong> O curso carro-chefe que já formou milhares de confeiteiras!</p>
+                </li>
+                <li>
+                      <p><strong>CURSO ESCOLA DE BOLO 4.0:</strong> A versão mais atualizada, com as últimas tendências e técnicas do mercado!</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="container gallery">
+            <h2>Bolos Maravilhosos Que Você Poderá Criar:</h2>
+            <p style="font-size: 1.1em; color: var(--text-light); margin-bottom: 25px;">
+                Inspire-se com alguns dos bolos que você estará apta(o) a reproduzir e criar sua própria arte na confeitaria.
+            </p>
+            <div class="image-grid">
+                <img src="/img/marrara/1.webp" alt="Mini Tortas Lucrativas - Exemplo de torta de morango com chantilly">
+                <img src="/img/marrara/2.webp" alt="Bolo Decorado 2">
+                <img src="/img/marrara/3.jpg" alt="Bolo Decorado 3">
+                <img src="/img/marrara/4.jpg" alt="Bolo Decorado 4">
+                <img src="/img/marrara/5.jpg" alt="Bolo Decorado 5">
+                <img src="/img/marrara/6.jpg" alt="Bolo Decorado 6">
+            </div>
+            <p style="font-size: 0.9em; color: var(--text-light); margin-top: 15px;">
+                *Estas são imagens ilustrativas. Seu potencial de criação será ilimitado!
+            </p>
+        </section>
+
+        <section class="container bonuses-section">
+            <h2>Isso Não é Tudo! Receba Bônus Exclusivos e Certificado!</h2>
+            <p style="text-align: center; font-size: 1.2em; margin-bottom: 20px; font-weight: 600; color: var(--accent-color);">
+                Para acelerar ainda mais o seu sucesso, a Marrara preparou presentes especiais para você:
+            </p>
+            <ul>
+                <li>Mais de 12 BÔNUS INCRÍVEIS para complementar seus conhecimentos e turbinar suas vendas.</li>
+                <li>ACESSO VITALÍCIO ao curso e todas as atualizações.</li>
+                <li>SUPORTE Exclusivo para tirar todas as suas dúvidas.</li>
+                <li>E um **Certificado de Conclusão** que comprova sua nova qualificação e profissionalismo!</li>
+            </ul>
+            <p class="certificate-info">
+                Demonstre sua expertise com um certificado reconhecido que fará a diferença em seu portfólio!
+            </p>
+        </section>
+
+        <section class="final-cta">
+            <div class="container">
+                <h2>Oportunidade Única Para Transformar Sua Vida!</h2>
+                <p class="price-info">
+                    Tudo isso por um investimento que cabe no seu bolso e te trará retorno garantido:
+                </p>
+                <span class="price-highlight">Por Apenas R$197,00</span>
+                <p class="price-info">
+                    Um valor simbólico para o conhecimento que te levará a uma nova realidade!
+                </p>
+                <a href="https://go.hotmart.com/N100098183J?ap=b69a" target="_blank" rel="noopener noreferrer" class="cta-button">
+                    SIM! Quero Minha Vaga e Meus Bônus Agora!
+                </a>
+                <p style="font-size: 1em; color: var(--background-white); margin-top: 20px;">
+                    Clique e garanta seu acesso imediato à Escola de Bolo by Marrara 4.0!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Click&Compre - Seu Catálogo Online de Conhecimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
